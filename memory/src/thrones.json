@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Aria",
+        "image": "/Components/Images/aria.jpg"
+    },
+    {
+        "id":2,
+        "name": "Brienne",
+        "image": "/Components/Images/Brienne.png"
+    },
+    {
+        "id": 3,
+        "name": "cersi",
+        "image": "/Components/Images/cersi.jpg"
+    },
+    {
+        "id": 4,
+        "name": "daenaryus",
+        "image": "/Components/Images/daenaryus.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "Jamie Lancaster",
+        "image": "/Components/Images/jamielancaster.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Khal Drogo",
+        "image": "/Components/Images/khaldrogo.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Night King",
+        "image": "/Components/Images/nightking.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Sansa",
+        "image": "/Components/Images/sansa.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Ned Stark",
+        "image": "/Components/Images/stark.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Theon",
+        "image": "/Components/Images/theon.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Tormund",
+        "image": "/Components/Images/tormund.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Tyrion",
+        "image": "/Components/Images/tyrion.jpg"
+    }
+]
