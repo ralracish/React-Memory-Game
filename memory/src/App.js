@@ -9,6 +9,9 @@ import Wrapper from "./Components/Wrapper";
 
 
 class App extends React.Component {
+  state = {
+    thrones
+  };
 
       shuffleArray = () => {
         let randomOrder = this.state.ThronesArray
@@ -27,7 +30,7 @@ class App extends React.Component {
         <div>
           <Header />
           <Title />
-          <Thrones />
+          {/* <Thrones /> */}
           {/* {this.state.thrones.map(friend => (
             <FriendCard
               removeFriend={this.removeFriend}

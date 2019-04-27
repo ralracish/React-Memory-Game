@@ -5,7 +5,7 @@ function Thrones(props) {
     return (
         <div className="jumbotron">
             <div className="img-container">
-                <img alt={props.name} src={props.thrones} />
+                <img alt={props.name} src={props.thronesimages} />
             </div>
            
             <span onClick={() => props.shuffleArray(props.id)} className="shuffle"></span>

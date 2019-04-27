@@ -5,7 +5,7 @@ import "./style.css";
 function Footer() {
     return (
         <div>
-            <Footer />
+            <h1>Clicky Game using React</h1>
         </div>
     );
 }
