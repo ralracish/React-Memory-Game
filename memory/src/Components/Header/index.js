@@ -1,40 +1,17 @@
 import React from "react";
+import "../style.css";
 
-import thrones from "./thrones.json"
+function Header() {
+    return (
+        <header className="header">
+            <h1>Click an image to begin!</h1>
+            <h1>You guessed correctly!</h1>
+            <h1>You guessed incorrectly!</h1>
+            Score 0: | Top Score: 
+        </header>
+    );
+}
 
-class App extends Component {
-    // Setting this.state.friends to the friends json array
-    state = {
-        thrones
-    };
+export default Header;
 
-    render() {
-        return (
-            <Wrapper>
-                <Title>Thrones List</Title>
-                {this.state.thrones.map(friend => (
-                    <FriendCard
-                        removeFriend={this.removeFriend}
-                        id={friend.id}
-                        key={friend.id}
-                        name={friend.name}
-                        image={friend.image}
-                        occupation={friend.occupation}
-                        location={friend.location}
-                    />
-                ))}
-            </Wrapper>
-        );
-    }
 
-    shuffleArray = () => {
-        let randomOrder = this.state.ThronesArray
-        for (let i = randomOrder.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [randomOrder[i], randomOrder[j]] = [randomOrder[j], randomOrder[i]];
-        }
-        console.log(randomOrder)
-        this.setState({
-            ThronesArray: randomOrder
-        })
-    };
