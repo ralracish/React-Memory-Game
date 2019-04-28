@@ -5,10 +5,12 @@ function Thrones(props) {
     return (
         <div className="jumbotron">
             <div className="img-container">
-                <img alt={props.name} src={props.thronesimages} />
+                <div class="row">
+                <img alt={props.name} src={props.image} />
             </div>
            
             <span onClick={() => props.shuffleArray(props.id)} className="shuffle"></span>
+            </div>
         </div>
     );
 }

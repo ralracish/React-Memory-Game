@@ -3,7 +3,9 @@ import './App.css';
 import Header from "./Components/Header";
 import Footer from "./Components/Footer/";
 import Title from "./Components/Title/";
-import Wrapper from "./Components/Wrapper";
+import Thrones from "./Components/Thrones";
+import thrones from "./thrones.json";
+// import Wrapper from "./Components/Wrapper";
 
 
 
@@ -14,15 +16,15 @@ class App extends React.Component {
   };
 
       shuffleArray = () => {
-        let randomOrder = this.state.ThronesArray
+        let randomOrder = this.state.thrones
         for (let i = randomOrder.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
           [randomOrder[i], randomOrder[j]] = [randomOrder[j], randomOrder[i]];
         }
         console.log(randomOrder)
-        //       this.setState({
-        //       ThronesArray: randomOrder
-        // })
+              this.setState({
+              thrones: randomOrder
+        })
       };
 
     render() {
@@ -30,18 +32,11 @@ class App extends React.Component {
         <div>
           <Header />
           <Title />
-          {/* <Thrones /> */}
-          {/* {this.state.thrones.map(friend => (
-            <FriendCard
-              removeFriend={this.removeFriend}
-              id={friend.id}
-              key={friend.id}
-              name={friend.name}
-              image={friend.image}
-              occupation={friend.occupation}
-              location={friend.location}
-            />
-          ))} */}
+          <Thrones />
+          {this.state.thrones.map(throne => (
+              name={thrones.name}
+              image={thrones.image}
+          ))}
           <Footer />
         </div>
       );
