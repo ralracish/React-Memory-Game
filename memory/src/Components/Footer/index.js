@@ -6,7 +6,7 @@ function Footer() {
     return (
         <footer className="footer">
             <div>
-                <h1>Clicky Game using React</h1>
+                <h5>Clicky Game using React</h5>
             </div>
         </footer>
     );
