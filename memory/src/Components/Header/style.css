@@ -9,9 +9,11 @@
   background: #6965E8;
 }
 h1 {
-  display: inline-block;
   font-family: gameofthrones;
   font-weight: bold;
+  margin-top:20px;
+  margin-left:20px;
+  text-align: center;
 }
 @font-face {
   font-family: gameofthrones;
@@ -19,7 +21,7 @@ h1 {
 }
 h4 {
   display: inline-block;
-  margin-left:50px;
+  margin-left:100px;
 }
 h5 {
   display: inline-block;
