@@ -1,17 +1,16 @@
 import React from "react";
 import "./style.css";
 
-function Header() {
+function Header(props) {
     return (
         <header className="header">
-            <h1>Click an image to begin!</h1>
-            <h1>You guessed correctly!</h1>
-            <h1>You guessed incorrectly!</h1>
-            Score 0: | Top Score: 
+            <h1>Game of Thrones Clicky Game</h1>
+            <span>{props.message}</span>
+            <span>Score: {props.score}</span>
+            <span>Top Score: {props.topScore}</span> 
         </header>
     );
 }
-
 export default Header;
 
 

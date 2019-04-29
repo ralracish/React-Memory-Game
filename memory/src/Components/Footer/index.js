@@ -4,9 +4,11 @@ import "./style.css";
 
 function Footer() {
     return (
-        <div>
-            <h1>Clicky Game using React</h1>
-        </div>
+        <footer className="footer">
+            <div>
+                <h1>Clicky Game using React</h1>
+            </div>
+        </footer>
     );
 }
 

@@ -3,14 +3,8 @@ import React from "react";
 
 function Thrones(props) {
     return (
-        <div className="jumbotron">
-            <div className="img-container">
-                <div class="row">
-                <img alt={props.name} src={props.image} />
-            </div>
-           
-            <span onClick={() => props.shuffleArray(props.id)} className="shuffle"></span>
-            </div>
+        <div className="img-container col-md-3" onClick={() => props.z(props.id)}>
+            <img alt={props.x} src={props.y} height="150px" width="150px"/>
         </div>
     );
 }

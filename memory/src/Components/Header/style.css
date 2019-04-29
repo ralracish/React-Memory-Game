@@ -5,10 +5,6 @@
 }
 
 .header span {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   padding: 3px;
   background: #6965E8;
 }
